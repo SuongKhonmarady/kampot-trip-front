@@ -1,0 +1,157 @@
+.location-card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: box-shadow 0.3s;
+}
+
+.location-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.location-card.pinned {
+  border: 2px solid #fbbf24;
+}
+
+.location-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.location-card-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.location-card-icon {
+  font-size: 2.25rem;
+}
+
+.location-card-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.location-card-name-khmer {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.location-pinned-badge {
+  background-color: #fef3c7;
+  color: #b45309;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.location-card-description {
+  color: #4b5563;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.location-card-distance {
+  margin-bottom: 1rem;
+  background-color: #eff6ff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.location-card-distance span {
+  font-size: 0.875rem;
+  color: #1e40af;
+  font-weight: 500;
+}
+
+.location-card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .location-card-footer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.location-card-map-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.location-card-map-link:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+.location-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.location-card-btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.location-card-btn.pin {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.location-card-btn.pin:hover {
+  background-color: #e5e7eb;
+}
+
+.location-card-btn.pin.pinned {
+  background-color: #fef3c7;
+  color: #f59e0b;
+}
+
+.location-card-btn.pin.pinned:hover {
+  background-color: #fde68a;
+}
+
+.location-card-btn.edit {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.location-card-btn.edit:hover {
+  background-color: #bfdbfe;
+}
+
+.location-card-btn.delete {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.location-card-btn.delete:hover {
+  background-color: #fecaca;
+}
